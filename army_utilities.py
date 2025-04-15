@@ -2,8 +2,8 @@ import random
 import army_unit as unit
 
 
-
-class Fanteria(unit.UnitaMilitare):  # eredita da UnitaMilitare
+class Fanteria(unit.UnitaMilitare):
+    """Eredita da UnitàMilitare aggiungendo gli attributi grado_militare e punti_salute"""
     def __init__(self, nome, numero_soldati, grado_militare, punti_salute):
         super().__init__(nome, numero_soldati)
         self.grado_militare = grado_militare 
@@ -11,6 +11,7 @@ class Fanteria(unit.UnitaMilitare):  # eredita da UnitaMilitare
         self.trincea_costruita = False
         
     def costruisci_trincea(self):
+        """Costruisce una trincea se ci sono abbastanza punti vita"""
         if self.punti_salute > 80:
             self.trincea_costruita = True
             print(f"{self.nome} ha costruito una trincea.")
@@ -18,7 +19,7 @@ class Fanteria(unit.UnitaMilitare):  # eredita da UnitaMilitare
             print(f"{self.nome} non è in grado di costruire una trincea.") 
 
 
-class Artiglieria(unit.UnitaMilitare):  # eredita da UnitaMilitare
+class Artiglieria(unit.UnitaMilitare):
     def __init__(self, nome, numero_soldati, tipo_artiglieria):
         super().__init__(nome, numero_soldati)
         self.tipo_artiglieria = tipo_artiglieria
