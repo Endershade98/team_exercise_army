@@ -28,7 +28,11 @@ Questa organizzazione permette al progetto di crescere nel tempo, adattandosi a 
     - Ricognizione: esplora aree ed è soggetta a rischi di intercettazione.
 
     - Visualizzazione dettagliata: È possibile vedere lo stato e i dettagli di ogni unità registrata.
- 
+
+## Documentazione
+Nunzio: scrittura della classe Madre "UnitaMilitare", che doveva essere ereditata dalle classi Figlie, ed ideazione e scrittura della classe ControlloMilitare che avrebbe dovuto ereditare le proprietà di tutte le altre classi Figlie gestendole.
+Liliana: scrittura delle classi Figlie di "UnitaMilitare" (Fanteria, Artiglieria, Cavalleria, SupportoLogistico, Ricognizione) dell'implementazione dei metodi e degli attributi specifici.
+
 ## ✅ Conclusioni
 Il progetto è una simulazione didattica per la gestione di unità militari, pensata con un'architettura modulare e facilmente espandibile. È ideale per esercitazioni di programmazione a oggetti e come base per sviluppi futuri. La struttura consente l'aggiunta di nuove unità e funzionalità senza modificare il nucleo del sistema. Può essere adattato a giochi, simulatori o ambienti educativi. Contributi e collaborazioni sono benvenuti!
 
